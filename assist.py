@@ -4,11 +4,6 @@ import wandb
 from openai import OpenAI
 client = OpenAI()
 
-env = environ.Env()
-environ.Env.read_env()
-
-api_key = env("OPENAI_API_KEY")
-
 gpt_assistant_prompt = "You're a " + input ("Who am I in this scenario?")
 gpt_user_prompt = input ("What prompt am I to do?")
 gpt_prompt = gpt_assistant_prompt, gpt_user_prompt
@@ -20,7 +15,7 @@ max_tokens = 256
 frequency_penalty = 0.0
 
 response = client.chat.completions.create(
-    model="gpt-3.5-turbo-0125",
+    model="gpt-3.5-turbo",
     messages=message,
     temperature=temperature,
     max_tokens=max_tokens,
