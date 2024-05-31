@@ -4,6 +4,7 @@ import wandb
 from openai import OpenAI
 client = OpenAI()
 
+#to be refactored
 gpt_assistant_prompt = "You're a " + input ("Who am I in this scenario?")
 gpt_user_prompt = input ("What prompt am I to do?")
 gpt_prompt = gpt_assistant_prompt, gpt_user_prompt
