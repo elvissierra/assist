@@ -5,6 +5,7 @@ from openai import OpenAI
 client = OpenAI()
 
 #to be refactored
+#logic to work on- have set as specific role to where only related questions are answered.
 gpt_assistant_prompt = "You're a " + input ("Who am I in this scenario?")
 gpt_user_prompt = input ("What prompt am I to do?")
 gpt_prompt = gpt_assistant_prompt, gpt_user_prompt
