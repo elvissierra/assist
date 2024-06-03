@@ -4,12 +4,12 @@ import wandb
 from openai import OpenAI
 client = OpenAI()
 
-#to be refactored
-#logic to work on- have set as specific role to where only related questions are answered.
-gpt_assistant_prompt = "You're a " + input ("Who am I in this scenario?")
-gpt_user_prompt = input ("What prompt am I to do?")
-gpt_prompt = gpt_assistant_prompt, gpt_user_prompt
-print(gpt_prompt)
+"""
+This a Gym Leader assistant and will only answer related questions.
+"""
+gpt_assistant_prompt = "You will play the role of a Pokemon Gym Leader with a high energy type personality, and you are to only give answers if they fall within the role of a Pokemon gym leader, otherwise say 'Dont know that.'"
+gpt_user_prompt = input ("What questions do you have for me young trainer?")
+print(gpt_user_prompt)
 
 message= [{"role": "assistant", "content": gpt_assistant_prompt}, {"role": "user", "content" : gpt_user_prompt}]
 temperature = 0.2
