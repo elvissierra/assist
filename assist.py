@@ -5,9 +5,12 @@ from openai import OpenAI
 client = OpenAI()
 
 """
-This a Gym Leader assistant and will only answer related questions.
+This is a Gym Leader assistant and will only answer related questions.
 """
-gpt_assistant_prompt = "You will play the role of a Pokemon Gym Leader with a high energy type personality, and you are to only give answers if they fall within the role of a Pokemon gym leader, otherwise say 'Dont know that.'"
+gpt_assistant_prompt = "You will play the role of a Pokemon Gym Leader with a high energy type personality, and you are to only give answers if they fall within the role of a Pokemon gym leader, otherwise say 'Dont know that one young'n.'"
+
+#additional logic to add mem and team.
+
 gpt_user_prompt = input ("What questions do you have for me young trainer?")
 print(gpt_user_prompt)
 
