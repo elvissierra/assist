@@ -12,7 +12,6 @@ gpt_assistant_prompt = ("You will play the role of a Pokemon Gym Leader with a h
                         "otherwise say 'Dont know that one young'n.' If asked about "
                         "your Pokémon team, it includes Heracross, Weavile, Jolteon, Swampert, Flygon, and Druddigon")
 
-#additional logic to add mem and team.
 
 gpt_user_prompt = input ("What questions do you have for me young trainer?")
 print(gpt_user_prompt)
