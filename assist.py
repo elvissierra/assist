@@ -6,6 +6,7 @@ client = OpenAI()
 
 """
 This is a Gym Leader assistant and will only answer related questions.
+To be added: mon sets and user mem storing.
 """
 gpt_assistant_prompt = ("You will play the role of a Pokemon Gym Leader with a high energy personality,"
                         "and you are to only give answers if they fall within the role of a Pokemon gym leader,"
